@@ -1,0 +1,100 @@
+.genealogy
+	position relative
+	width 100%
+	height 400px  
+	background #fff
+
+	.genealogy__box
+		padding: 10px 30px
+		background: #333
+		min-width: 200px
+		max-width: 200px
+		height: 40px
+		color: #fff
+		display: table-cell
+		vertical-align: middle
+		background: color-1
+		z-index: 1
+		
+	.genealogy__primary
+		position absolute
+		left 0
+		top 30%
+		
+		 > .genealogy__box
+		 	background color-1
+			&:before, &:after
+				content ""
+				width 50px
+				height 50px
+				z-index 0
+				display inline-block   
+				position absolute
+				right -30px
+				border-left 3px solid #ccc
+				
+			&:before
+				border-top 3px solid #ccc
+				top -52px
+							
+			&:after				
+				border-bottom 3px solid #ccc
+				bottom -52px
+				
+		> ul
+			left: 110%
+			position: absolute
+			top: -140%
+			z-index: 1 
+			
+			> li
+				margin-bottom: 43%
+				position relative
+				&:last-child	
+					margin-bottom 0					
+				 
+		.genealogy__secondary
+			> .genealogy__box
+					background color-3 
+				&:before, &:after
+					content: ""
+					width: 40px
+					height: 20px
+					display: inline-block
+					position: absolute
+					right -20px
+					z-index 0
+					
+				&:before
+					border-top: 3px solid #ccc
+					border-left: 3px solid #ccc
+					top: -22px
+					
+				&:after
+					border-bottom 3px solid #ccc
+					border-left 3px solid #ccc
+					display inline-block   
+					position absolute
+					bottom -22px
+					
+			> ul
+				left: 105%
+				position: absolute
+				top: -65%
+				z-index: 1 
+				
+				> li
+					margin-bottom 20px
+			
+			.genealogy__tertiary
+				> ul
+					left: 110%
+					position: absolute
+					top: -50%
+					
+		.genealogy__tertiary
+			> .genealogy__box
+				background color-1-light 
+
+	
+	
